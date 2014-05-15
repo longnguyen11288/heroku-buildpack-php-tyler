@@ -47,7 +47,7 @@ http {
 
     # Deny hidden files (.htaccess, .htpasswd, .DS_Store).
     location ~ /\. {
-      deny            all;
+      allow           all;
       access_log      off;
       log_not_found   off;
     }
